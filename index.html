@@ -4,6 +4,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ESP - Environmental Surveying Platform</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -13,7 +34,7 @@
         >
         <a class="top-nav-centered">Group 12</a>
 
-        <a>Documents</a>
+        <a href="#documents">Documents</a>
         <a href="#about">About Us</a>
         <a href="#home">Home</a>
       </div>
@@ -64,73 +85,101 @@
         </div>
       </div>
     </div>
+    <hr />
 
     <div class="about">
       <h1 id="about">The Team</h1>
-      <div class="card">
-        <img src="Team Pictures/devon2.PNG" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h4><b>Devon Wilkerson, CpE</b></h4>
-          <p>
-            Devon Wilkerson, a senior student of the Department of Electrical
-            and Computer Engineering at the University of Central Florida. His
-            focus on the project was the autonmous navigation and object
-            detection. He plans to continue his education and work towards a MS
-            in Computer Engineering. His career goals are to create robotic
-            prosthetics after graduating.
-            <br></br>
-
-          </p>
+      <div class="card-group">
+        <div class="card1">
+          <img src="Team Pictures/devon2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Devon Wilkerson, CpE</h5>
+            <p class="card-text">
+              Devon Wilkerson, a senior student of the Department of Electrical
+              and Computer Engineering at the University of Central Florida. His
+              focus on the project was the autonmous navigation and object
+              detection. He plans to continue his education and work towards a
+              MS in Computer Engineering. His career goals are to create robotic
+              prosthetics after graduating.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="Team Pictures/kris.png" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h4><b>Kris Choudhury, CpE</b></h4>
-          <p>
-            Kris Choudhury, a senior student of the Department of Electrical and
-            Computer Engineering at the University of Central Florida will be
-            receiving his Bachelor of Science in December 2021. His focus was on
-            the UI design and functionality. After graduating, he will enter a
-            career as an IT Software Developer at World Fuel Services.
-            <br></br>
-            <br></br>
-          </p>
+        <div class="card">
+          <img src="Team Pictures/kris.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Kris Choudhury, CpE</h5>
+            <p class="card-text">
+              Kris Choudhury, a senior student of the Department of Electrical
+              and Computer Engineering at the University of Central Florida will
+              be receiving his Bachelor of Science in December 2021. His focus
+              was on the UI design and functionality. After graduating, he will
+              enter a career as an IT Software Developer at World Fuel Services.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="Team Pictures/sergio.png" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h4><b>Sergio Gonzales, CpE</b></h4>
-          <p>
-            Sergio Gonzalez, a senior at the University of Central Florida and
-            will receive his Bachelor of Science in December of 2021. His focus
-            on the project was primarily on the sensors and their communication
-            to other devices. He will begin his career as a Software Engineer at
-            Laserstar Technologies.
-            <br></br>
-            <br></br>
-
-          </p>
+        <div class="card">
+          <img src="Team Pictures/sergio.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Sergio Gonzales, CpE</h5>
+            <p class="card-text">
+              Sergio Gonzalez, a senior at the University of Central Florida and
+              will receive his Bachelor of Science in December of 2021. His
+              focus on the project was primarily on the sensors and their
+              communication to other devices. He will begin his career as a
+              Software Engineer at Laserstar Technologies.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="Team Pictures/Ben2.png" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h4><b>Benjamin Goerdt, EE</b></h4>
-          <p>
-            Benjamin Goerdt, a senior student of the Department of Electrical
-            and Computer Engineering at the University of Central Florida and
-            will receive his Bachelor of Electrical Engineering in December of
-            2021. His focus on the project was with circuit board design, 3D
-            modeling, and power systems. Ben’s career aspirations are to work in
-            the automotive industry furthering the research and development of
-            electric vehicles.
-          </p>
+        <div class="card">
+          <img src="Team Pictures/Ben2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Benjamin Goerdt, EE</h5>
+            <p class="card-text">
+              Benjamin Goerdt, a senior student of the Department of Electrical
+              and Computer Engineering at the University of Central Florida and
+              will receive his Bachelor of Electrical Engineering in December of
+              2021. His focus on the project was with circuit board design, 3D
+              modeling, and power systems. Ben’s career aspirations are to work
+              in the automotive industry furthering the research and development
+              of electric vehicles.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="documents"></div>
+    <hr />
+    <div class="documents">
+      <h1 id="documents">Documents</h1>
+      <div class="doc-box">
+        <div class="card-group">
+          <div class="card1">
+            <div class="card-body">
+              <h5 class="card-title"><a href="Documents/Senior Design 1 - Initial Project Document.pdf" target="_blank">Initial Project Description</a></h5>
+              <p class="card-text">Project proposal outlining our initial idea for Senior Design 1.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="Documents/Senior Design 1 - Final Document.pdf " target="_blank">Senior Design 1 - Final Report</a></h5>
+              <p class="card-text">120 page technical paper outlining our research and design at the end of Senior Design 1.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://www.youtube.com/watch?v=IxQhYfvORBQ" target="_blank">CDR Presentation</a></h5>
+              <p class="card-text">Critical Design Review presentation video showing our progress midway during Senior Design 2.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="Documents/Senior Design 2 - Conference Paper.pdf" target="_blank">Conference Paper</a></h5>
+              <p class="card-text">8 page conference paper summarizing our project for our review committee at the end of Senior Design 2.</p>
+            </div>
+          </div>
+        </div>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

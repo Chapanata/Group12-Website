@@ -3,15 +3,17 @@ html {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 body {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(197, 197, 197);
 }
 .top-nav {
   background-color: #16425b;
   position: fixed;
-  z-index: auto;
+  z-index: 1;
   width: 100%;
   top: 0;
   left: 0;
+  color: #f2f2f2;
+
 }
 
 .top-nav a {
@@ -23,16 +25,24 @@ body {
   font-size: 1.2rem;
 }
 
+
+.top-nav a:hover, a:active {
+  background-color: #3092ca;
+  color: white;
+  text-decoration: none;
+}
+
 .top-nav-centered {
   float: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .overview {
-  padding-top: 3%;
+  padding-top: 5%;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -40,6 +50,7 @@ body {
 
 .overview h1 {
   font-size: 2.6rem;
+
 }
 
 .overview p {
@@ -51,6 +62,7 @@ body {
 
 .center-box {
   display: inline-block;
+  padding-top: 30px;
   padding-bottom: 5%;
 }
 .box1 {
@@ -70,10 +82,13 @@ body {
 .about {
   display: inline-block;
   text-align: center;
-  background-color: rgb(196, 196, 196);
   width: 100%;
   height: 95%;
-  border-radius: 15px;
+}
+
+.about h1 {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .card {
@@ -85,7 +100,21 @@ body {
   width: 20%;
 }
 
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 60px;
+  margin-left: 60px;
+  width: 20%;
+}
+
 .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card1:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -93,6 +122,12 @@ img {
   border-radius: 5px 5px 0 0;
 }
 
-.container {
-  padding: 2px 16px;
+.documents {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 95%;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
+
