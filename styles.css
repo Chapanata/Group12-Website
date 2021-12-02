@@ -1,0 +1,47 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+body {
+  background-color: #fff;
+}
+.top-nav {
+  background-color: #16425b;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.top-nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.top-nav-centered {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overview {
+  padding-top: 3%;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.overview h1 {
+  font-size: 2.5rem;
+}
+
+.overview p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
